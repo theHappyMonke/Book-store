@@ -8,9 +8,9 @@
     <body>
         <p>Body</p>
         <div class = "navbar">
-            <a href = "/">home</a>
-            <a href = "/about">about</a>
-            <a href = "/sign-in">sign-in</a>
+            <a href = "{{ url_for('home') }}">home</a>
+            <a href = "{{ url_for('about') }}">about</a>
+            <a href = "{{ url_for('signin') }}">sign-in</a>
         </div>
         {% block content %}{% endblock %}
     </body>
